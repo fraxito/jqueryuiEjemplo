@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo Widgets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+
+    </head>
+    <body>
+
+        <div id="tabsEjemplo">
+            <ul>
+                <li><a href="#fragmento1"> SOY EL FRAGMENTO 1!</a></li>
+                <li><a href="#fragmento2">  2!</a></li>
+                <li><a href="#fragmento3"> SOY EL F 3!</a></li>
+            </ul>
+            <div id="fragmento1">
+                <p>Este es el famoso fragmento 1. Esta activo por defecto</p>
+            </div>
+            <div id="fragmento2">
+                <p>Este es el 2</p>
+            </div>
+            <div id="fragmento3">
+                <p>Este es el 3</p>
+            </div>
+        </div>
+        <script>
+            $('#tabsEjemplo').tabs();
+        </script>
+        
+    </body>
+</html>
