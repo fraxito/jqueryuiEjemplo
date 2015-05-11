@@ -30,7 +30,11 @@
             </div>
         </div>
         <script>
-            $('#tabsEjemplo').tabs();
+            $('#tabsEjemplo').tabs({
+                active: 1,
+                collapsible: true,
+                disabled: [0,2]
+            });
         </script>
         
     </body>
