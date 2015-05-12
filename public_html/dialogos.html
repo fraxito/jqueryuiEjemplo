@@ -17,14 +17,18 @@
         <div id="miDialogo" title="Soy el titulo!">
             Aqui va el cuerpo del mensaje
         </div>
+
         <script>
             $('#miDialogo').dialog({
-                autoOpen: false,
-                dialogClass: 'alert'
+                autoOpen: true,
+                width:500
+                //modal:true
             });
-            
+           
             function muestraDialogo(){
-                $('#miDialogo').dialog({autoOpen: true});
+                $('#miDialogo').dialog({
+                    autoOpen: true 
+                });
             }
         </script>
     </body>
