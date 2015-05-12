@@ -33,7 +33,16 @@
             $('#tabsEjemplo').tabs({
                 active: 1,
                 collapsible: true,
-                disabled: [0,2]
+                //disabled: [0,2]
+                //event:"mouseover"
+                hide: { 
+                    effect: "explode",
+                    duration: 1000
+                },
+                show: {
+                    effect: "pulsate", 
+                    duration:800
+                }
             });
         </script>
         
