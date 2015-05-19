@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <style>
+            .caja{
+                width: 100px;
+                height: 100px;
+                background: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="rojo"></div><br/>
+        <div id="verde"></div><br/>
+        <div id="azul"></div><br/>
+        
+        <p> valor del slider: <span id="deslizador"></span> </p>
+        
+        
+        <div id="miCaja" class="caja">
+            Hola Soy una caja!
+        </div>
+        
+        <script>
+
+            $('#deslizador').slider();
+
+        </script>
+        
+    </body>
+</html>

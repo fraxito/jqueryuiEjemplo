@@ -13,10 +13,26 @@
     </head>
     <body>
         <div id="fecha"></div>  
+        <input type="text" id="etiqueta">
 
 
         <script>
-            $('#fecha').datepicker();
+            $('#fecha').datepicker({
+              changeMonth: true,
+              changeYear: true,
+              yearRange: "-25: +10",
+              showButtonPanel: true,
+              numberOfMonths: 1,
+              dateFormat: "D mm yy"
+            });
+            $('#etiqueta').datepicker({
+              
+              dateFormat: "oo, DD M yy",
+              dayNames: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+              dayNamesMin: ["Do","Lu","Ma","Mi","Ju","Vi","Sa"],
+              firstDay: 1,
+              //monthNames : ["Enero", "Febrero", 
+            });
         </script>
     </body>
 </html>
