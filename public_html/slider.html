@@ -31,8 +31,24 @@
         
         <script>
 
-            $('#deslizador').slider();
-
+            $('#rojo, #verde, #azul').slider({
+                min:0,
+                max: 255,
+                step: 1,
+                slide: cambiaMarcador
+            });
+            
+            function cambiaMarcador(){
+                var rojo = $("#rojo").slider("value");
+                var azul = $("#azul").slider("value");
+                var verde = $("#verde").slider("value");
+                var cadenaRGB = "rgb("+ rojo + "," +verde + ","+azul+")";
+                $('#deslizador').text(cadenaRGB);
+                $('#miCaja').css({
+                    backgroundColor: cadenaRGB
+                });
+            }
+            
         </script>
         
     </body>
